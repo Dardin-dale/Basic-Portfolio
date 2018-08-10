@@ -12,6 +12,10 @@ header {
     height: 50px;
     background: #ffffff;
     border-color: #dddddd;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -20,9 +24,10 @@ nav {
     float: right;
 }
 
-
 h1,
-h2 {
+h2,
+h3,
+h4 {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
@@ -32,12 +37,22 @@ p {
 
 footer {
     width: 100%;
-    color: #ffffff;
-    text-align: center;
-    background: #666666;
-    position:absolute;
-    bottom:0;
     height: 50px;
+    color: #ffffff;
+    background: #666666;
+    position: fixed;
+    border-top: 10px;
+    border-color: #4aaaa5;
+    bottom: 0; 
+    left: 0; 
+}
+
+/* Format copyright to bottom in footer */
+.copy {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
 }
 
 /* Controls name in Header */
@@ -46,23 +61,40 @@ footer {
     color: white;
     display: inline-block;
     font-size: 24px;
-    padding: 10px 10px;
+    padding: 13px 13px;
     font-weight: bold;
+}
+
+/* keeps header contents fixed width */
+.head {
+    max-width: 960px;
+    margin: auto;
 }
 
 /* controls the main content box */
 .container {
-    margin-top: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
     display: block;
     overflow: auto;
     background: #ffffff;
     border-color: #dddddd;
-    border: 5px;
+    border: 10px;
+    position: relative;
 }
 
-/* controls picture in about page */
+/* controls picture in index */
 #me {
     width: 350px;
     height: 200px;
     float: left;
 }
+
+/* About me headline in index */
+#about {
+    color: #4aaaa5;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+}
+
